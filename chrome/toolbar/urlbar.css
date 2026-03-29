@@ -38,7 +38,7 @@
 /*
   MARK: URL bar
 */
-#urlbar-background,
+.urlbar-background,
 #searchbar {
   border-radius: calc(var(--urlbar-icon-border-radius) + 2px) !important;
 
@@ -195,7 +195,7 @@
 }
 
 /* Focus border for URL bar. */
-#urlbar[focused="true"]:not([suppress-focus-border]) > #urlbar-background,
+#urlbar[focused="true"]:not([suppress-focus-border]) > .urlbar-background,
 #searchbar:focus-within {
   outline-offset: calc(var(--focus-outline-width) * -1 + 1px) !important;
 }
