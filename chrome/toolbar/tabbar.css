@@ -781,7 +781,7 @@
 }
 
 /* Appearance & sizing for the private browsing indicator. */
-#private-browsing-indicator-with-label {
+.private-browsing-indicator-with-label {
   position: relative !important;
   isolation: isolate;
   font-size: 12px;
@@ -789,7 +789,7 @@
   /* Allow space for the gradient to underlay other toolbar items. */
   margin-inline: -16px -16px !important;
   padding-inline: 32px 24px !important;
-  color: var(--button-primary-color, var(--toolbar-background-color)) !important;
+  color: var(--button-text-color-primary) !important;
   text-shadow: none !important;
   background: var(--uc-gradient);
   --uc-bg-color: var(--button-background-color-primary, var(--toolbarbutton-icon-fill-attention));
