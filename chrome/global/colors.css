@@ -52,14 +52,9 @@
   --urlbarView-hover-background: light-dark(#e5e5e5, #444444) !important;
   --urlbarView-separator-color: light-dark(#EFEFEF, #5F5F5F) !important;
   /* Menus/panels */
-  --arrowpanel-background: light-dark(#fff, #4A4A4A) !important;
-  --arrowpanel-color: light-dark(#1c1c1c, #fff) !important;
-  --arrowpanel-border-color: light-dark(#fff, #636363) !important;
-  --arrowpanel-dimmed: light-dark(#565656, #565656) !important;
-  --arrowpanel-dimmed-further: light-dark(#707070, #707070) !important;
-  --panel-color: var(--arrowpanel-color) !important;
-  --panel-background-color: var(--arrowpanel-background) !important;
-  --panel-border-color: var(--arrowpanel-border-color) !important;
+  --panel-text-color:  light-dark(#1c1c1c, #fff) !important;
+  --panel-background-color: light-dark(#fff, #4A4A4A) !important;
+  --panel-border-color: light-dark(#fff, #636363) !important;
   --panel-separator-color: light-dark(#dadada, #636363) !important;
   --button-background-color-ghost: transparent !important;
   --button-background-color-ghost-hover: light-dark(#eee, #646464) !important;
@@ -103,7 +98,7 @@
   &[dialogroot] {
     /* Dialog */
     --background-color-canvas: var(--panel-background-color) !important;
-    --text-color: var(--panel-color) !important;
+    --text-color: var(--panel-text-color) !important;
     /* Text input */
     --background-color-box: var(--input-bgcolor) !important;
     --border-color: var(--input-border-color) !important;
@@ -171,7 +166,7 @@
 
   tooltip {
     background-color: var(--panel-background-color) !important;
-    color: var(--panel-color) !important;
+    color: var(--panel-text-color) !important;
     border-color: var(--panel-border-color) !important;
   }
 
@@ -323,15 +318,10 @@ body {
     --urlbarView-hover-background: var(--button-background-color-ghost-active) !important;
     --urlbarView-separator-color: var(--panel-separator-color) !important;
     /* Menus/panels */
-    --arrowpanel-background: Field !important;
-    --arrowpanel-color: FieldText !important;
-    --arrowpanel-border-color: light-dark(transparent, var(--panel-separator-color)) !important;
-    --arrowpanel-dimmed: color-mix(in srgb, currentColor 17%, transparent) !important;
-    --arrowpanel-dimmed-further: color-mix(in srgb, currentColor 30%, transparent) !important;
-    --panel-color: var(--arrowpanel-color) !important;
-    --panel-background-color: var(--arrowpanel-background) !important;
-    --panel-border-color: var(--arrowpanel-border-color) !important;
-    --panel-separator-color: color-mix(in srgb, currentColor 17%, var(--arrowpanel-background)) !important;
+    --panel-text-color: FieldText !important;
+    --panel-background-color: Field !important;
+    --panel-border-color: light-dark(transparent, var(--panel-separator-color)) !important;
+    --panel-separator-color: color-mix(in srgb, currentColor 17%, var(--panel-background-color)) !important;
     --button-background-color-ghost-hover: color-mix(in srgb, currentColor 8%, transparent) !important;
     --button-background-color-ghost-active: color-mix(in srgb, currentColor 13%, transparent) !important;
     --button-background-color-ghost: transparent !important;
@@ -352,9 +342,9 @@ body {
     --button-background-color-active: color-mix(in srgb, currentColor 20%, transparent) !important;
     /* Text input field, e.g. bookmarks editor. */
     --focus-outline-color: var(--uc-accent-adjusted) !important;
-    --input-bgcolor: var(--arrowpanel-background) !important;
-    --input-color: var(--arrowpanel-color) !important;
-    --input-border-color: color-mix(in srgb, currentColor 35%, var(--arrowpanel-background)) !important;
+    --input-bgcolor: var(--panel-background-color) !important;
+    --input-color: var(--panel-text-color) !important;
+    --input-border-color: color-mix(in srgb, currentColor 35%, var(--panel-background-color)) !important;
     /* Sidebar */
     --sidebar-background-color: var(--toolbar-background-color) !important;
     --sidebar-text-color: var(--toolbar-color) !important;
