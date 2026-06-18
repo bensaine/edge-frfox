@@ -54,7 +54,7 @@
       0 -.8px 0 0 rgb(0 0 0 / 0.02),
       0 0.5px 1px 1px rgb(0 0 0 / 0.06),
       0 1px 1px rgb(0 0 0 / 0.1);
-    --browser-frame-bgcolor: var(--toolbar-bgcolor, var(--lwt-accent-color));
+    --uc-browser-frame-background-color: var(--toolbar-background-color);
 
     /* Different shadow for higher resolution displays. */
     @media (resolution > 1.8dppx) {
@@ -64,10 +64,10 @@
     }
 
     @media -moz-pref("uc.tweak.floating-tabs") {
-      --browser-frame-bgcolor: var(--lwt-accent-color);
+      --uc-browser-frame-background-color: var(--lwt-accent-color);
 
       &:-moz-window-inactive {
-        --browser-frame-bgcolor: var(--lwt-accent-color-inactive, var(--lwt-accent-color));
+        --uc-browser-frame-background-color: var(--lwt-accent-color-inactive, var(--lwt-accent-color));
       }
     }
   }
@@ -114,7 +114,7 @@
        * same shadow from the browser window on top. */
       box-shadow:
         var(--uc-tweak-rounded-corners-shadow, 0 0 transparent),
-        0 0 0 16px var(--browser-frame-bgcolor) !important;
+        0 0 0 16px var(--uc-browser-frame-background-color) !important;
       clip-path: inset(0);
       pointer-events: none;
     }
@@ -201,7 +201,7 @@
 
   /* Apply colour to the frame around the browser window. */
   #browser {
-    background-color: var(--browser-frame-bgcolor) !important;
+    background-color: var(--uc-browser-frame-background-color) !important;
   }
 
   /* Change colour of page when loading */

@@ -22,12 +22,12 @@ treechildren::-moz-tree-row(selected) {
 
 /* Change the background colour when focused */
 treechildren::-moz-tree-row(selected, focus) {
-  background-color: var(--button-primary-bgcolor) !important;
+  background-color: var(--button-background-color-primary) !important;
 }
 
 treechildren::-moz-tree-row(current, focus) {
   outline: var(--default-focusring);
-  outline-color: var(--button-primary-bgcolor) !important;
+  outline-color: var(--button-background-color-primary) !important;
   outline-offset: calc(-1 * var(--default-focusring-width));
 }
 
@@ -56,8 +56,8 @@ treechildren::-moz-tree-separator {
 
 /* Change the colour of the drop feedback elements */
 treechildren::-moz-tree-cell-text(primary, dropOn) {
-  background-color: var(--button-primary-bgcolor) !important;
-  color: var(--button-primary-color) !important;
+  background-color: var(--button-background-color-primary) !important;
+  color: var(--button-text-color-primary) !important;
 }
 
 treechildren::-moz-tree-drop-feedback {

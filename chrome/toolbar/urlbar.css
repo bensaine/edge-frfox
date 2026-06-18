@@ -141,17 +141,6 @@
   }
 }
 
-/* Search engine indicator. */
-#urlbar-search-mode-indicator {
-  :root:not([lwtheme]) & {
-    background-color: var(--urlbar-box-hover-bgcolor) !important;
-  }
-
-  & #urlbar-search-mode-indicator-title {
-    font-size: 0.9em !important;
-  }
-}
-
 /* Remove border between URL bar input and suggestions. */
 #urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
   border-top: 0 !important;

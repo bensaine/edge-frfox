@@ -255,6 +255,10 @@
 .tab-content {
   padding-inline: var(--inline-tab-padding) 0 !important;
 
+  &:is([selected], [multiselected]):-moz-window-inactive {
+    color: var(--tab-selected-textcolor-inactive) !important;
+  }
+
   /* Pinned tab padding. */
   &[pinned] {
     padding: 0 var(--uc-inline-pinned-tab-padding) !important;
@@ -427,7 +431,7 @@
 
   /* Make sure that the bottom corners have the same background colour. */
   &:is([selected], [multiselected]) {
-    --uc-tab-corner-bg: var(--tab-selected-bgcolor, var(--lwt-selected-tab-background-color, var(--toolbar-bgcolor)));
+    --uc-tab-corner-bg: var(--tab-background-color-selected, var(--toolbar-background-color));
     --uc-tab-corner-outline: var(--lwt-tab-line-color, transparent);
     /* Disable tab outlines when selected. */
     outline: none !important;
@@ -444,8 +448,8 @@
       --uc-tab-corner-bg: rgb(255 255 255 / .3) !important;
 
       @media -moz-pref("uc.tweak.floating-tabs") {
-        background-color: var(--toolbar-bgcolor) !important;
-        --uc-tab-corner-bg: var(--toolbar-bgcolor) !important;
+        background-color: var(--toolbar-background-color) !important;
+        --uc-tab-corner-bg: var(--toolbar-background-color) !important;
       }
     }
   }
@@ -785,10 +789,10 @@
   /* Allow space for the gradient to underlay other toolbar items. */
   margin-inline: -16px -16px !important;
   padding-inline: 32px 24px !important;
-  color: var(--button-primary-color, var(--toolbar-bgcolor)) !important;
+  color: var(--button-primary-color, var(--toolbar-background-color)) !important;
   text-shadow: none !important;
   background: var(--uc-gradient);
-  --uc-bg-color: var(--button-primary-bgcolor, var(--toolbarbutton-icon-fill-attention));
+  --uc-bg-color: var(--button-background-color-primary, var(--toolbarbutton-icon-fill-attention));
 
   /* Primay gradient, fades to transparent on the left. */
   --uc-gradient: linear-gradient(to right, transparent, var(--uc-bg-color) 35%);

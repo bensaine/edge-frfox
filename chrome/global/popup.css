@@ -530,7 +530,7 @@ panel[type="autocomplete-richlistbox"] {
   }
 
   :is(menupopup, panel):where(:not([type="arrow"])) {
-    --panel-background: inherit !important;
+    --panel-background-color: inherit !important;
     --panel-color: inherit !important;
     --panel-padding: inherit !important;
     --panel-border-radius: inherit !important;
@@ -547,7 +547,7 @@ panel[type="autocomplete-richlistbox"] {
 
   .popup-internal-box,
   .menupopup-arrowscrollbox {
-    background: var(--panel-background) !important;
+    background: var(--panel-background-color) !important;
     border: 1px solid var(--panel-border-color) !important;
   }
 
@@ -605,23 +605,23 @@ panel[type="autocomplete-richlistbox"] {
     color: inherit !important;
   }
 
-  menupopup menu[disabled="true"],
-  menupopup menuitem[disabled="true"] {
+  menupopup menu[disabled],
+  menupopup menuitem[disabled] {
     background: var(--button-background-color-ghost-disabled) !important;
     color: var(--button-text-color-ghost-disabled) !important;
     opacity: var(--button-opacity-disabled) !important;
   }
 
-  menupopup menu:hover:not([disabled=true]),
-  menupopup menuitem:hover:not([disabled=true]),
-  menupopup menu[_moz-menuactive]:not([disabled=true]),
-  menupopup menuitem[_moz-menuactive]:not([disabled=true]) {
+  menupopup menu:hover:not([disabled]),
+  menupopup menuitem:hover:not([disabled]),
+  menupopup menu[_moz-menuactive]:not([disabled]),
+  menupopup menuitem[_moz-menuactive]:not([disabled]) {
     background-color: var(--button-background-color-ghost-hover) !important;
     color: var(--button-text-color-ghost-hover) !important;
   }
 
-  menupopup menuitem:hover:active:not([disabled=true]),
-  menupopup menu:hover:active:not([disabled=true]) {
+  menupopup menuitem:hover:active:not([disabled]),
+  menupopup menu:hover:active:not([disabled]) {
     background-color: var(--button-background-color-ghost-active) !important;
     color: var(--button-text-color-ghost-active) !important;
   }
@@ -838,7 +838,7 @@ dialog {
  * CSS reference: https://searchfox.org/mozilla-central/source/browser/components/tabpreview/tabpreview.css
  * Requires `browser.tabs.cardPreview.enabled` set to `true` */
 .tab-preview-container {
-  background-color: var(--panel-background) !important;
+  background-color: var(--panel-background-color) !important;
   color: var(--panel-color) !important;
   border: 0.5px solid var(--panel-separator-color) !important;
   border-radius: 8.5px !important;
