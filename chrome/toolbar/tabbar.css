@@ -746,6 +746,11 @@
       margin-inline-start: 8px !important;
     }
   }
+
+  /* Remove separator line */
+  &::before {
+    content: none !important;
+  }
 }
 
 /* Clip the bottom of the tabs so the shadows don't bleed into other areas. */
