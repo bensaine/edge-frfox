@@ -143,7 +143,7 @@
 
 /* Status/link preview panel */
 #statuspanel-label {
-  background-color: var(--toolbar-field-focus-background-color) !important;
+  background-color: var(--toolbar-field-background-color-focus) !important;
   color: var(--toolbar-field-focus-color) !important;
   border-color: transparent !important;
   box-shadow: 0 2px 5px #0002, 0 0 0 1px light-dark(#0001, #0002) !important;
